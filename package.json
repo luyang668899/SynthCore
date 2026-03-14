@@ -1,0 +1,59 @@
+{
+  "name": "synthcore",
+  "version": "1.0.0",
+  "description": "智能 AI 助手平台，集成多渠道消息系统和插件扩展架构",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "gateway:watch": "tsx watch src/gateway/server.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "test:live": "LIVE=1 vitest",
+    "test:docker:live-models": "docker-compose -f docker-compose.yml run --rm test-live-models",
+    "test:docker:live-gateway": "docker-compose -f docker-compose.yml run --rm test-live-gateway",
+    "test:docker:onboard": "docker-compose -f docker-compose.yml run --rm test-onboard",
+    "test:install:smoke": "node scripts/test-force.ts",
+    "check": "oxlint && oxfmt --check",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt --write",
+    "tsgo": "tsc --noEmit",
+    "ui:build": "cd ui && pnpm install && pnpm build",
+    "release:check": "node --import tsx scripts/release-check.ts",
+    "canvas:a2ui:bundle": "node scripts/bundle-a2ui.sh",
+    "openclaw": "tsx src/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "chatbot",
+    "messaging",
+    "plugins",
+    "extensions"
+  ],
+  "author": "luyang668899",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luyang668899/SynthCore.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "oxlint": "^1.0.0",
+    "oxfmt": "^1.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {}
+  },
+  "workspaces": [
+    "extensions/*",
+    "apps/*"
+  ]
+}
