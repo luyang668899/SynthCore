@@ -1,0 +1,9 @@
+{
+  "id": "demo-storage",
+  "kind": "memory",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

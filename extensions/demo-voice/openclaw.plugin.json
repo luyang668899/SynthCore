@@ -1,0 +1,8 @@
+{
+  "id": "demo-voice",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

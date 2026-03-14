@@ -1,0 +1,28 @@
+{
+  "name": "asana-integration",
+  "version": "1.0.0",
+  "description": "Asana project management and notifications integration for OpenClaw",
+  "main": "dist/index.js",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "asana", "integration"],
+  "openclaw": {
+    "type": "integration",
+    "commands": [
+      "asana:list-workspaces",
+      "asana:list-projects",
+      "asana:list-tasks",
+      "asana:create-task",
+      "asana:update-task",
+      "asana:comment-task",
+      "asana:list-notifications"
+    ],
+    "config": {
+      "asana.personalAccessToken": {
+        "type": "string",
+        "required": true,
+        "description": "Asana personal access token"
+      }
+    }
+  }
+}

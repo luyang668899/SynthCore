@@ -1,0 +1,51 @@
+{
+  "id": "auth0-auth",
+  "name": "Auth0 Authentication",
+  "version": "2026.2.17",
+  "description": "Auth0 authentication plugin for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["auth0", "openid-client", "passport", "passport-oauth2", "jsonwebtoken"],
+  "config": {
+    "auth0": {
+      "domain": {
+        "type": "string",
+        "description": "Auth0 domain",
+        "default": "your-domain.auth0.com"
+      },
+      "clientId": {
+        "type": "string",
+        "description": "Auth0 client ID",
+        "default": ""
+      },
+      "clientSecret": {
+        "type": "string",
+        "description": "Auth0 client secret",
+        "default": ""
+      },
+      "redirectUri": {
+        "type": "string",
+        "description": "Auth0 redirect URI",
+        "default": "http://localhost:3000/auth/auth0/callback"
+      },
+      "scope": {
+        "type": "string",
+        "description": "Auth0 OAuth scopes",
+        "default": "openid profile email"
+      }
+    },
+    "jwt": {
+      "secret": {
+        "type": "string",
+        "description": "JWT secret for session tokens",
+        "default": "your-secret-key"
+      },
+      "expiresIn": {
+        "type": "string",
+        "description": "JWT expiration time",
+        "default": "1h"
+      }
+    }
+  }
+}

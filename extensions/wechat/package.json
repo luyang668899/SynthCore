@@ -1,0 +1,35 @@
+{
+  "name": "@openclaw/wechat",
+  "version": "2026.2.17",
+  "description": "WeChat message channel plugin for OpenClaw",
+  "keywords": [
+    "message-channel",
+    "openclaw",
+    "plugin",
+    "wechat"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx test-wechat.ts"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^1.20.0",
+    "wechaty-puppet-wechat4u": "^1.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  },
+  "openclaw": {
+    "plugin": {
+      "type": "channel",
+      "name": "WeChat",
+      "description": "WeChat message channel support"
+    }
+  }
+}

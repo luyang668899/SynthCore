@@ -1,0 +1,37 @@
+{
+  "name": "jira-integration",
+  "version": "1.0.0",
+  "description": "Jira project management and notifications integration for OpenClaw",
+  "main": "dist/index.js",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "jira", "integration"],
+  "openclaw": {
+    "type": "integration",
+    "commands": [
+      "jira:list-projects",
+      "jira:list-issues",
+      "jira:create-issue",
+      "jira:update-issue",
+      "jira:comment-issue",
+      "jira:list-notifications"
+    ],
+    "config": {
+      "jira.apiToken": {
+        "type": "string",
+        "required": true,
+        "description": "Jira API token"
+      },
+      "jira.email": {
+        "type": "string",
+        "required": true,
+        "description": "Jira email address"
+      },
+      "jira.baseUrl": {
+        "type": "string",
+        "required": true,
+        "description": "Jira base URL (e.g., https://your-domain.atlassian.net)"
+      }
+    }
+  }
+}

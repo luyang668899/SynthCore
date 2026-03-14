@@ -1,0 +1,11 @@
+{
+  "name": "@openclaw/message-types-enhance",
+  "version": "0.0.1",
+  "description": "Message types enhancement plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

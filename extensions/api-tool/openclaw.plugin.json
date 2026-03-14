@@ -1,0 +1,17 @@
+{
+  "id": "api-tool",
+  "name": "API Tool",
+  "description": "API integration and management tool plugin for OpenClaw",
+  "version": "1.0.0",
+  "author": "OpenClaw Team",
+  "type": "tool",
+  "main": "dist/index.js",
+  "dependencies": [],
+  "config": {
+    "apiEndpoints": {
+      "type": "array",
+      "default": [],
+      "description": "List of API endpoints to manage"
+    }
+  }
+}

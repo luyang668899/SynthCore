@@ -1,0 +1,14 @@
+{
+  "name": "@openclaw/mfa-plugin",
+  "version": "0.0.1",
+  "description": "Multi-factor authentication plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {
+    "@types/speakeasy": "^2.0.10",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

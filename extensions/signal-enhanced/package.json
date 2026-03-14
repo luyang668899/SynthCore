@@ -1,0 +1,17 @@
+{
+  "name": "@openclaw/signal-enhanced",
+  "version": "2026.2.17",
+  "description": "Enhanced Signal message channel plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "pnpm tsx test-signal-enhanced.ts"
+  },
+  "dependencies": {
+    "signal-cli": "^0.1.0"
+  },
+  "devDependencies": {
+    "openclaw": "workspace:*",
+    "tsx": "^4.15.2"
+  }
+}

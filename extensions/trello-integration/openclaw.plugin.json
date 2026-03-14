@@ -1,0 +1,33 @@
+{
+  "name": "trello-integration",
+  "version": "1.0.0",
+  "description": "Trello board management and notifications integration for OpenClaw",
+  "main": "dist/index.js",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "trello", "integration"],
+  "openclaw": {
+    "type": "integration",
+    "commands": [
+      "trello:list-boards",
+      "trello:list-lists",
+      "trello:list-cards",
+      "trello:create-card",
+      "trello:update-card",
+      "trello:comment-card",
+      "trello:list-notifications"
+    ],
+    "config": {
+      "trello.apiKey": {
+        "type": "string",
+        "required": true,
+        "description": "Trello API key"
+      },
+      "trello.token": {
+        "type": "string",
+        "required": true,
+        "description": "Trello API token"
+      }
+    }
+  }
+}

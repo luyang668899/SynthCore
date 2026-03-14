@@ -1,0 +1,32 @@
+{
+  "name": "@openclaw/scheduling-tool",
+  "version": "1.0.0",
+  "description": "OpenClaw Scheduling Tool Plugin",
+  "keywords": [
+    "automation",
+    "openclaw",
+    "plugin",
+    "scheduling",
+    "tools"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test-scheduling-tool.js"
+  },
+  "dependencies": {
+    "cron": "^3.1.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/cron": "^2.4.3",
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}

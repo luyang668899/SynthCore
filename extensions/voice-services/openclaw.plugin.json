@@ -1,0 +1,76 @@
+{
+  "id": "voice-services",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable voice services integration"
+      },
+      "defaultProvider": {
+        "type": "string",
+        "enum": ["google", "azure", "deepgram"],
+        "default": "google",
+        "description": "Default voice service provider"
+      },
+      "providers": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "google": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              },
+              "credentials": {
+                "type": "string",
+                "description": "Google Cloud credentials JSON"
+              },
+              "projectId": {
+                "type": "string",
+                "description": "Google Cloud project ID"
+              }
+            }
+          },
+          "azure": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              },
+              "subscriptionKey": {
+                "type": "string",
+                "description": "Azure Speech Service subscription key"
+              },
+              "region": {
+                "type": "string",
+                "description": "Azure Speech Service region"
+              }
+            }
+          },
+          "deepgram": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              },
+              "apiKey": {
+                "type": "string",
+                "description": "Deepgram API key"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

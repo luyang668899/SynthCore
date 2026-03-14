@@ -1,0 +1,8 @@
+{
+  "id": "message-types-enhance",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

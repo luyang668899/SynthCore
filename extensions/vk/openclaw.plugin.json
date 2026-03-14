@@ -1,0 +1,75 @@
+{
+  "id": "vk",
+  "name": "VK",
+  "description": "VK message channel plugin for OpenClaw",
+  "version": "2026.2.17",
+  "author": "OpenClaw Team",
+  "type": "channel",
+  "main": "index.ts",
+  "config": {
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable VK channel"
+    },
+    "token": {
+      "type": "string",
+      "default": "",
+      "description": "VK API token"
+    },
+    "groupId": {
+      "type": "string",
+      "default": "",
+      "description": "VK group ID"
+    },
+    "webhookUrl": {
+      "type": "string",
+      "default": "",
+      "description": "VK webhook URL"
+    },
+    "webhookPort": {
+      "type": "number",
+      "default": 3000,
+      "description": "VK webhook port"
+    },
+    "enableCommands": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable commands"
+    },
+    "commandPrefix": {
+      "type": "string",
+      "default": "/",
+      "description": "Command prefix"
+    },
+    "allowedUsers": {
+      "type": "array",
+      "default": [],
+      "description": "Allowed user IDs"
+    },
+    "messageDelay": {
+      "type": "number",
+      "default": 1000,
+      "description": "Message delay in milliseconds"
+    },
+    "maxMessages": {
+      "type": "number",
+      "default": 100,
+      "description": "Max messages to store"
+    }
+  },
+  "capabilities": [
+    "sendMessages",
+    "receiveMessages",
+    "sendFiles",
+    "receiveFiles",
+    "sendRichMessages",
+    "receiveRichMessages",
+    "userManagement",
+    "channelManagement"
+  ],
+  "dependencies": {
+    "vk-io": "^4.9.0",
+    "express": "^5.2.1"
+  }
+}

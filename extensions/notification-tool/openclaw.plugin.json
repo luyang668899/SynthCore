@@ -1,0 +1,82 @@
+{
+  "id": "notification-tool",
+  "name": "Notification Tool",
+  "version": "1.0.0",
+  "description": "Notification management and sending tool",
+  "type": "tool",
+  "main": "index.js",
+  "commands": [
+    {
+      "name": "send-notification",
+      "description": "Send notification",
+      "args": [
+        {
+          "name": "title",
+          "description": "Notification title",
+          "required": true
+        },
+        {
+          "name": "message",
+          "description": "Notification message",
+          "required": true
+        },
+        {
+          "name": "channel",
+          "description": "Notification channel",
+          "required": true
+        },
+        {
+          "name": "recipient",
+          "description": "Notification recipient",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "list-channels",
+      "description": "List available notification channels"
+    },
+    {
+      "name": "list-notifications",
+      "description": "List notifications"
+    },
+    {
+      "name": "get-notification",
+      "description": "Get notification by ID",
+      "args": [
+        {
+          "name": "id",
+          "description": "Notification ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "delete-notification",
+      "description": "Delete notification",
+      "args": [
+        {
+          "name": "id",
+          "description": "Notification ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "update-notification-status",
+      "description": "Update notification status",
+      "args": [
+        {
+          "name": "id",
+          "description": "Notification ID",
+          "required": true
+        },
+        {
+          "name": "status",
+          "description": "New status",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@openclaw/gitlab-integration",
+  "version": "1.0.0",
+  "description": "GitLab integration plugin for OpenClaw",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@gitbeaker/rest": "^39.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}

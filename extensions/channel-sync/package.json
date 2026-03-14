@@ -1,0 +1,11 @@
+{
+  "name": "@openclaw/channel-sync",
+  "version": "0.0.1",
+  "description": "Cross-channel message synchronization plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

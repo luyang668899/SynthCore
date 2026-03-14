@@ -1,0 +1,27 @@
+{
+  "id": "gitlab-integration",
+  "name": "GitLab Integration",
+  "description": "GitLab repository management and notifications plugin for OpenClaw",
+  "version": "1.0.0",
+  "author": "OpenClaw Team",
+  "type": "integration",
+  "main": "dist/index.js",
+  "dependencies": [],
+  "config": {
+    "gitlabToken": {
+      "type": "string",
+      "default": "",
+      "description": "GitLab personal access token"
+    },
+    "gitlabUrl": {
+      "type": "string",
+      "default": "https://gitlab.com",
+      "description": "GitLab instance URL"
+    },
+    "projects": {
+      "type": "array",
+      "default": [],
+      "description": "List of projects to monitor"
+    }
+  }
+}

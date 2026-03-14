@@ -1,0 +1,32 @@
+{
+  "name": "bitbucket-integration",
+  "version": "1.0.0",
+  "description": "Bitbucket repository management and notifications integration for OpenClaw",
+  "main": "dist/index.js",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "bitbucket", "integration"],
+  "openclaw": {
+    "type": "integration",
+    "commands": [
+      "bitbucket:list-repos",
+      "bitbucket:list-pull-requests",
+      "bitbucket:list-issues",
+      "bitbucket:create-issue",
+      "bitbucket:comment-issue",
+      "bitbucket:list-notifications"
+    ],
+    "config": {
+      "bitbucket.apiToken": {
+        "type": "string",
+        "required": true,
+        "description": "Bitbucket API token"
+      },
+      "bitbucket.username": {
+        "type": "string",
+        "required": true,
+        "description": "Bitbucket username"
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "encryption-tool",
+  "name": "Encryption Tool",
+  "version": "1.0.0",
+  "description": "Data encryption and security tool",
+  "type": "tool",
+  "main": "index.js",
+  "commands": [
+    {
+      "name": "encrypt",
+      "description": "Encrypt data",
+      "args": [
+        {
+          "name": "data",
+          "description": "Data to encrypt",
+          "required": true
+        },
+        {
+          "name": "key",
+          "description": "Encryption key",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "decrypt",
+      "description": "Decrypt data",
+      "args": [
+        {
+          "name": "data",
+          "description": "Data to decrypt",
+          "required": true
+        },
+        {
+          "name": "key",
+          "description": "Decryption key",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "generate-key",
+      "description": "Generate encryption key"
+    },
+    {
+      "name": "hash",
+      "description": "Hash data",
+      "args": [
+        {
+          "name": "data",
+          "description": "Data to hash",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "verify-hash",
+      "description": "Verify hash",
+      "args": [
+        {
+          "name": "data",
+          "description": "Data to verify",
+          "required": true
+        },
+        {
+          "name": "hash",
+          "description": "Hash to verify against",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "encrypt-file",
+      "description": "Encrypt file",
+      "args": [
+        {
+          "name": "input",
+          "description": "Input file path",
+          "required": true
+        },
+        {
+          "name": "output",
+          "description": "Output file path",
+          "required": true
+        },
+        {
+          "name": "key",
+          "description": "Encryption key",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "decrypt-file",
+      "description": "Decrypt file",
+      "args": [
+        {
+          "name": "input",
+          "description": "Input file path",
+          "required": true
+        },
+        {
+          "name": "output",
+          "description": "Output file path",
+          "required": true
+        },
+        {
+          "name": "key",
+          "description": "Decryption key",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

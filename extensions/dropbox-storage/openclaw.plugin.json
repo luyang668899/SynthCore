@@ -1,0 +1,14 @@
+{
+  "name": "dropbox-storage",
+  "version": "1.0.0",
+  "description": "Dropbox storage plugin for OpenClaw",
+  "main": "index.ts",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "dropbox", "storage"],
+  "categories": ["storage"],
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  }
+}

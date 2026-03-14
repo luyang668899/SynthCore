@@ -1,0 +1,10 @@
+{
+  "name": "signal-enhanced",
+  "version": "2026.2.17",
+  "description": "Enhanced Signal message channel plugin for OpenClaw",
+  "type": "channel",
+  "main": "index.ts",
+  "dependencies": {
+    "signal-cli": "^0.1.0"
+  }
+}

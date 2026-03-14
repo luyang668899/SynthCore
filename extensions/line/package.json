@@ -1,0 +1,35 @@
+{
+  "name": "@openclaw/line",
+  "version": "2026.2.17",
+  "description": "Line message channel plugin for OpenClaw",
+  "keywords": [
+    "line",
+    "message-channel",
+    "openclaw",
+    "plugin"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx test-line.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^10.6.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  },
+  "openclaw": {
+    "plugin": {
+      "type": "channel",
+      "name": "Line",
+      "description": "Line message channel support"
+    }
+  }
+}

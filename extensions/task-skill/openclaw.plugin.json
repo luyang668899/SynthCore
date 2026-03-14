@@ -1,0 +1,24 @@
+{
+  "id": "task-skill",
+  "name": "Task Skill",
+  "version": "2026.2.17",
+  "description": "Task management and to-do list skill for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["uuid", "date-fns"],
+  "config": {
+    "task": {
+      "defaultDueDays": {
+        "type": "number",
+        "description": "Default number of days for task due date",
+        "default": 7
+      },
+      "defaultPriority": {
+        "type": "string",
+        "description": "Default task priority",
+        "default": "medium"
+      }
+    }
+  }
+}

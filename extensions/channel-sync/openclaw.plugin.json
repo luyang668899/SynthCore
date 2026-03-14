@@ -1,0 +1,26 @@
+{
+  "id": "channel-sync",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "syncEnabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable cross-channel message synchronization"
+      },
+      "syncInterval": {
+        "type": "number",
+        "default": 5000,
+        "description": "Sync interval in milliseconds"
+      },
+      "channels": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Channels to synchronize"
+      }
+    }
+  }
+}

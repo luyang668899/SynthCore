@@ -1,0 +1,51 @@
+{
+  "id": "salesforce-auth",
+  "name": "Salesforce Authentication",
+  "version": "2026.2.17",
+  "description": "Salesforce authentication plugin for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["jsforce", "passport", "passport-oauth2", "jsonwebtoken"],
+  "config": {
+    "salesforce": {
+      "loginUrl": {
+        "type": "string",
+        "description": "Salesforce login URL",
+        "default": "https://login.salesforce.com"
+      },
+      "clientId": {
+        "type": "string",
+        "description": "Salesforce client ID",
+        "default": ""
+      },
+      "clientSecret": {
+        "type": "string",
+        "description": "Salesforce client secret",
+        "default": ""
+      },
+      "redirectUri": {
+        "type": "string",
+        "description": "Salesforce redirect URI",
+        "default": "http://localhost:3000/auth/salesforce/callback"
+      },
+      "scope": {
+        "type": "string",
+        "description": "Salesforce OAuth scopes",
+        "default": "api web"
+      }
+    },
+    "jwt": {
+      "secret": {
+        "type": "string",
+        "description": "JWT secret for session tokens",
+        "default": "your-secret-key"
+      },
+      "expiresIn": {
+        "type": "string",
+        "description": "JWT expiration time",
+        "default": "1h"
+      }
+    }
+  }
+}

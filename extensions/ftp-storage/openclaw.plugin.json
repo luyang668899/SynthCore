@@ -1,0 +1,11 @@
+{
+  "name": "ftp-storage",
+  "version": "1.0.0",
+  "description": "FTP/SFTP storage plugin for OpenClaw",
+  "main": "index.ts",
+  "type": "storage",
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  }
+}

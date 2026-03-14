@@ -1,0 +1,29 @@
+{
+  "id": "jwt-auth",
+  "name": "JWT Authentication",
+  "version": "2026.2.17",
+  "description": "JWT authentication plugin for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["jsonwebtoken", "passport", "passport-jwt"],
+  "config": {
+    "jwt": {
+      "secret": {
+        "type": "string",
+        "description": "JWT secret key",
+        "default": "your-secret-key"
+      },
+      "expiresIn": {
+        "type": "string",
+        "description": "JWT expiration time",
+        "default": "1h"
+      },
+      "algorithm": {
+        "type": "string",
+        "description": "JWT algorithm",
+        "default": "HS256"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "slack-enhanced",
+  "version": "2026.2.17",
+  "description": "Enhanced Slack message channel plugin for OpenClaw",
+  "type": "channel",
+  "main": "index.ts",
+  "dependencies": {
+    "@slack/web-api": "^6.11.0",
+    "@slack/socket-mode": "^1.1.0"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "id": "scheduling-tool",
+  "name": "Scheduling Tool",
+  "version": "1.0.0",
+  "description": "Task scheduling and automation tool",
+  "type": "tool",
+  "main": "index.js",
+  "commands": [
+    {
+      "name": "create-job",
+      "description": "Create a scheduled job",
+      "args": [
+        {
+          "name": "name",
+          "description": "Job name",
+          "required": true
+        },
+        {
+          "name": "cron",
+          "description": "Cron expression",
+          "required": true
+        },
+        {
+          "name": "command",
+          "description": "Command to execute",
+          "required": true
+        },
+        {
+          "name": "args",
+          "description": "Command arguments",
+          "required": false
+        },
+        {
+          "name": "enabled",
+          "description": "Enable job",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "list-jobs",
+      "description": "List all scheduled jobs"
+    },
+    {
+      "name": "get-job",
+      "description": "Get job by ID",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "update-job",
+      "description": "Update job",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        },
+        {
+          "name": "name",
+          "description": "Job name",
+          "required": false
+        },
+        {
+          "name": "cron",
+          "description": "Cron expression",
+          "required": false
+        },
+        {
+          "name": "command",
+          "description": "Command to execute",
+          "required": false
+        },
+        {
+          "name": "args",
+          "description": "Command arguments",
+          "required": false
+        },
+        {
+          "name": "enabled",
+          "description": "Enable job",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "delete-job",
+      "description": "Delete job",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "enable-job",
+      "description": "Enable job",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "disable-job",
+      "description": "Disable job",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "run-job",
+      "description": "Run job immediately",
+      "args": [
+        {
+          "name": "id",
+          "description": "Job ID",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

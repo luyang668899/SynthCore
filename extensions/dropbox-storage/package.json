@@ -1,0 +1,23 @@
+{
+  "name": "@openclaw/dropbox-storage",
+  "version": "1.0.0",
+  "description": "Dropbox storage plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}

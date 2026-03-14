@@ -1,0 +1,14 @@
+{
+  "name": "news-skill",
+  "version": "1.0.0",
+  "description": "News skill plugin for OpenClaw",
+  "main": "index.ts",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "news", "skill"],
+  "categories": ["skill"],
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  }
+}

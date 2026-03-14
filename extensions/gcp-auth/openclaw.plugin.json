@@ -1,0 +1,8 @@
+{
+  "id": "gcp-auth",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

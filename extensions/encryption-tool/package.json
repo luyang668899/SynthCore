@@ -1,0 +1,30 @@
+{
+  "name": "@openclaw/encryption-tool",
+  "version": "1.0.0",
+  "description": "OpenClaw Encryption Tool Plugin",
+  "keywords": [
+    "encryption",
+    "openclaw",
+    "plugin",
+    "security"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test-encryption-tool.js"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}

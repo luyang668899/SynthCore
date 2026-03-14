@@ -1,0 +1,11 @@
+{
+  "name": "@openclaw/reddit",
+  "version": "0.0.1",
+  "description": "Reddit channel plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

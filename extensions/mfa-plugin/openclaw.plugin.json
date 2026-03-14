@@ -1,0 +1,36 @@
+{
+  "id": "mfa-plugin",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable multi-factor authentication"
+      },
+      "required": {
+        "type": "boolean",
+        "default": false,
+        "description": "Require MFA for all users"
+      },
+      "methods": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": ["totp", "sms", "email"]
+        },
+        "default": ["totp"],
+        "description": "Enabled MFA methods"
+      },
+      "smsProvider": {
+        "type": "string",
+        "description": "SMS provider for MFA"
+      },
+      "emailProvider": {
+        "type": "string",
+        "description": "Email provider for MFA"
+      }
+    }
+  }
+}

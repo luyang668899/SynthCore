@@ -1,0 +1,11 @@
+{
+  "name": "@openclaw/demo-voice",
+  "version": "0.0.1",
+  "description": "Demo voice call plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

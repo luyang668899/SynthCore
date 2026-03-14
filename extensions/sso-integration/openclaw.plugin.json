@@ -1,0 +1,83 @@
+{
+  "id": "sso-integration",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean",
+        "default": true,
+        "description": "Enable SSO integration"
+      },
+      "providers": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "google": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "Google OAuth client ID"
+              },
+              "clientSecret": {
+                "type": "string",
+                "description": "Google OAuth client secret"
+              },
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
+          "github": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "GitHub OAuth client ID"
+              },
+              "clientSecret": {
+                "type": "string",
+                "description": "GitHub OAuth client secret"
+              },
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
+          "microsoft": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "clientId": {
+                "type": "string",
+                "description": "Microsoft OAuth client ID"
+              },
+              "clientSecret": {
+                "type": "string",
+                "description": "Microsoft OAuth client secret"
+              },
+              "enabled": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          }
+        }
+      },
+      "callbackUrl": {
+        "type": "string",
+        "default": "http://localhost:3000/auth/callback",
+        "description": "SSO callback URL"
+      },
+      "jwtSecret": {
+        "type": "string",
+        "description": "JWT secret for SSO tokens"
+      }
+    }
+  }
+}

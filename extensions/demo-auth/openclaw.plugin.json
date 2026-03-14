@@ -1,0 +1,8 @@
+{
+  "id": "demo-auth",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

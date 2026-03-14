@@ -1,0 +1,14 @@
+{
+  "name": "weather-skill",
+  "version": "1.0.0",
+  "description": "Weather skill plugin for OpenClaw",
+  "main": "index.ts",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "weather", "skill"],
+  "categories": ["skill"],
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^10.0.0"
+  }
+}

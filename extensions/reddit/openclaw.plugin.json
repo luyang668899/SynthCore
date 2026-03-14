@@ -1,0 +1,9 @@
+{
+  "id": "reddit",
+  "channels": ["reddit"],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "demo-skill",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

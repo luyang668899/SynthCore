@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw/voice-services",
+  "version": "0.0.1",
+  "description": "Voice services integration plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {
+    "@azure/cognitiveservices-speech": "^1.34.0",
+    "@deepgram/sdk": "^3.0.0",
+    "@google-cloud/speech": "^6.0.0"
+  },
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

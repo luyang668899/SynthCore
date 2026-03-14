@@ -1,0 +1,8 @@
+{
+  "id": "aws-auth",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

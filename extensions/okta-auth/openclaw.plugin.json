@@ -1,0 +1,51 @@
+{
+  "id": "okta-auth",
+  "name": "Okta Authentication",
+  "version": "2026.2.17",
+  "description": "Okta authentication plugin for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["@okta/okta-sdk-nodejs", "passport", "passport-oauth2", "jsonwebtoken"],
+  "config": {
+    "okta": {
+      "issuer": {
+        "type": "string",
+        "description": "Okta issuer URL",
+        "default": "https://your-okta-domain.okta.com/oauth2/default"
+      },
+      "clientId": {
+        "type": "string",
+        "description": "Okta client ID",
+        "default": ""
+      },
+      "clientSecret": {
+        "type": "string",
+        "description": "Okta client secret",
+        "default": ""
+      },
+      "redirectUri": {
+        "type": "string",
+        "description": "Okta redirect URI",
+        "default": "http://localhost:3000/auth/okta/callback"
+      },
+      "scope": {
+        "type": "string",
+        "description": "Okta OAuth scopes",
+        "default": "openid profile email"
+      }
+    },
+    "jwt": {
+      "secret": {
+        "type": "string",
+        "description": "JWT secret for session tokens",
+        "default": "your-secret-key"
+      },
+      "expiresIn": {
+        "type": "string",
+        "description": "JWT expiration time",
+        "default": "1h"
+      }
+    }
+  }
+}

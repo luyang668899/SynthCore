@@ -1,0 +1,141 @@
+{
+  "id": "webhook-tool",
+  "name": "Webhook Tool",
+  "version": "1.0.0",
+  "description": "Webhook integration and management tool",
+  "type": "tool",
+  "main": "index.js",
+  "commands": [
+    {
+      "name": "create-webhook",
+      "description": "Create a webhook",
+      "args": [
+        {
+          "name": "name",
+          "description": "Webhook name",
+          "required": true
+        },
+        {
+          "name": "url",
+          "description": "Webhook URL",
+          "required": true
+        },
+        {
+          "name": "method",
+          "description": "HTTP method",
+          "required": false
+        },
+        {
+          "name": "headers",
+          "description": "HTTP headers",
+          "required": false
+        },
+        {
+          "name": "enabled",
+          "description": "Enable webhook",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "list-webhooks",
+      "description": "List all webhooks"
+    },
+    {
+      "name": "get-webhook",
+      "description": "Get webhook by ID",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "update-webhook",
+      "description": "Update webhook",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        },
+        {
+          "name": "name",
+          "description": "Webhook name",
+          "required": false
+        },
+        {
+          "name": "url",
+          "description": "Webhook URL",
+          "required": false
+        },
+        {
+          "name": "method",
+          "description": "HTTP method",
+          "required": false
+        },
+        {
+          "name": "headers",
+          "description": "HTTP headers",
+          "required": false
+        },
+        {
+          "name": "enabled",
+          "description": "Enable webhook",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "delete-webhook",
+      "description": "Delete webhook",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "enable-webhook",
+      "description": "Enable webhook",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "disable-webhook",
+      "description": "Disable webhook",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "send-webhook",
+      "description": "Send webhook",
+      "args": [
+        {
+          "name": "id",
+          "description": "Webhook ID",
+          "required": true
+        },
+        {
+          "name": "data",
+          "description": "Webhook data",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

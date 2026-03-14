@@ -1,0 +1,17 @@
+{
+  "name": "@openclaw/skill-plugin",
+  "version": "2026.2.17",
+  "description": "Skill plugin for OpenClaw with various skill implementations",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "pnpm tsx test-skill-plugin.ts"
+  },
+  "dependencies": {
+    "openai": "^4.47.1"
+  },
+  "devDependencies": {
+    "openclaw": "workspace:*",
+    "tsx": "^4.15.2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@openclaw/task-skill",
+  "version": "2026.2.17",
+  "description": "Task management and to-do list skill plugin for OpenClaw",
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "skill",
+    "task",
+    "todo"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "date-fns": "^3.6.0",
+    "uuid": "^11.0.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.2.17"
+  }
+}

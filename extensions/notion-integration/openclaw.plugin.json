@@ -1,0 +1,28 @@
+{
+  "name": "notion-integration",
+  "version": "1.0.0",
+  "description": "Notion document management and notifications integration for OpenClaw",
+  "main": "dist/index.js",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "keywords": ["openclaw", "plugin", "notion", "integration"],
+  "openclaw": {
+    "type": "integration",
+    "commands": [
+      "notion:list-workspaces",
+      "notion:list-pages",
+      "notion:create-page",
+      "notion:update-page",
+      "notion:list-databases",
+      "notion:query-database",
+      "notion:list-notifications"
+    ],
+    "config": {
+      "notion.apiKey": {
+        "type": "string",
+        "required": true,
+        "description": "Notion API key"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@openclaw/notification-tool",
+  "version": "1.0.0",
+  "description": "OpenClaw Notification Tool Plugin",
+  "keywords": [
+    "notification",
+    "openclaw",
+    "plugin",
+    "tools"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node test-notification-tool.js"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}

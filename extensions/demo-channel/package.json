@@ -1,0 +1,11 @@
+{
+  "name": "@openclaw/demo-channel",
+  "version": "0.0.1",
+  "description": "Demo channel plugin for OpenClaw",
+  "type": "module",
+  "main": "index.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  }
+}

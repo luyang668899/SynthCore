@@ -1,0 +1,29 @@
+# Demo Skill Implementation
+
+## Commands
+
+### hello
+Says hello to the user.
+
+```prose
+command hello {
+  output "Hello! This is the demo skill speaking."
+}
+```
+
+### echo
+Echoes back the user's input.
+
+```prose
+command echo {
+  input "What would you like me to echo?"
+  output "You said: {{input}}"
+}
+```
+
+## Example Usage
+
+```
+@demo-skill hello
+@demo-skill echo This is a test
+```

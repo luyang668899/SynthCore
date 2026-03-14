@@ -1,0 +1,80 @@
+{
+  "id": "line",
+  "name": "Line",
+  "description": "Line message channel plugin for OpenClaw",
+  "version": "2026.2.17",
+  "author": "OpenClaw Team",
+  "type": "channel",
+  "main": "index.ts",
+  "config": {
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable Line channel"
+    },
+    "channelAccessToken": {
+      "type": "string",
+      "default": "",
+      "description": "Line channel access token"
+    },
+    "channelSecret": {
+      "type": "string",
+      "default": "",
+      "description": "Line channel secret"
+    },
+    "webhookUrl": {
+      "type": "string",
+      "default": "",
+      "description": "Line webhook URL"
+    },
+    "webhookPort": {
+      "type": "number",
+      "default": 3000,
+      "description": "Line webhook port"
+    },
+    "enableCommands": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable commands"
+    },
+    "commandPrefix": {
+      "type": "string",
+      "default": "/",
+      "description": "Command prefix"
+    },
+    "allowedUsers": {
+      "type": "array",
+      "default": [],
+      "description": "Allowed user IDs"
+    },
+    "allowedGroups": {
+      "type": "array",
+      "default": [],
+      "description": "Allowed group IDs"
+    },
+    "messageDelay": {
+      "type": "number",
+      "default": 1000,
+      "description": "Message delay in milliseconds"
+    },
+    "maxMessages": {
+      "type": "number",
+      "default": 100,
+      "description": "Max messages to store"
+    }
+  },
+  "capabilities": [
+    "sendMessages",
+    "receiveMessages",
+    "sendFiles",
+    "receiveFiles",
+    "sendRichMessages",
+    "receiveRichMessages",
+    "userManagement",
+    "channelManagement"
+  ],
+  "dependencies": {
+    "@line/bot-sdk": "^10.6.0",
+    "express": "^5.2.1"
+  }
+}

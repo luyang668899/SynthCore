@@ -1,0 +1,24 @@
+{
+  "id": "calendar-skill",
+  "name": "Calendar Skill",
+  "version": "2026.2.17",
+  "description": "Calendar management and event reminder skill for OpenClaw",
+  "author": "OpenClaw Team",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": ["date-fns", "uuid"],
+  "config": {
+    "calendar": {
+      "defaultReminderMinutes": {
+        "type": "number",
+        "description": "Default reminder time in minutes before event",
+        "default": 15
+      },
+      "timezone": {
+        "type": "string",
+        "description": "Default timezone",
+        "default": "Asia/Shanghai"
+      }
+    }
+  }
+}

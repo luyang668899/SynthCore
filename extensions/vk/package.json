@@ -1,0 +1,35 @@
+{
+  "name": "@openclaw/vk",
+  "version": "2026.2.17",
+  "description": "VK message channel plugin for OpenClaw",
+  "keywords": [
+    "message-channel",
+    "openclaw",
+    "plugin",
+    "vk"
+  ],
+  "license": "MIT",
+  "author": "OpenClaw Team",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx test-vk.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "vk-io": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.5",
+    "typescript": "^5.9.3"
+  },
+  "openclaw": {
+    "plugin": {
+      "type": "channel",
+      "name": "VK",
+      "description": "VK message channel support"
+    }
+  }
+}

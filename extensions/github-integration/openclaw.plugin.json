@@ -1,0 +1,27 @@
+{
+  "id": "github-integration",
+  "name": "GitHub Integration",
+  "description": "GitHub repository management and notifications plugin for OpenClaw",
+  "version": "1.0.0",
+  "author": "OpenClaw Team",
+  "type": "integration",
+  "main": "dist/index.js",
+  "dependencies": [],
+  "config": {
+    "githubToken": {
+      "type": "string",
+      "default": "",
+      "description": "GitHub personal access token"
+    },
+    "webhookSecret": {
+      "type": "string",
+      "default": "",
+      "description": "GitHub webhook secret"
+    },
+    "repositories": {
+      "type": "array",
+      "default": [],
+      "description": "List of repositories to monitor"
+    }
+  }
+}

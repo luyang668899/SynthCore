@@ -1,0 +1,22 @@
+{
+  "name": "@openclaw/api-tool",
+  "version": "1.0.0",
+  "description": "API integration and management tool plugin for OpenClaw",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.3.7"
+  }
+}
